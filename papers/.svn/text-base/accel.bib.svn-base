@@ -1,0 +1,8 @@
+@inproceedings{frey09-tpcg,
+  author = {Frey, S. and Ertl, T.},
+  title  = {{Accelerating Raycasting Utilizing Volume Segmentation of Industrial CT Data}},
+  booktitle = {{EG UK Theory and Practice of Computer Graphics}},
+  year   = {2009},
+  location = {Cardiff, UK},
+  pages  = {33--40}
+}

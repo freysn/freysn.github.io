@@ -1,0 +1,12 @@
+@inproceedings{panagiotidis_diana:_2011,
+address = {Stirlingshire, United Kingdom},
+title = {{DIANA:} A Device Abstraction Framework for Parallel Computations},
+url = {http://dx.doi.org/10.4203/ccp.95.20},
+booktitle = {Proceedings of the Second International Conference on Parallel, Distributed, Grid and Cloud Computing for Engineering},
+publisher = {Civil-Comp Press},
+author = {Panagiotidis, A. and Kauker, D. and Frey, S. and Ertl, T.},
+editor = {Iványi, P. and Topping, B. H. V},
+year = {2011},
+}
+
+ 

@@ -1,0 +1,12 @@
+@inproceedings{frey09-isvc,
+ author = {Frey, Steffen and M\"{u}ller, Christoph and Strengert, Magnus and Ertl, Thomas},
+ title = {Concurrent CT Reconstruction and Visual Analysis Using Hybrid Multi-resolution Raycasting in a Cluster Environment},
+ booktitle = {ISVC '09: Proceedings of the 5th International Symposium on Advances in Visual Computing},
+ year = {2009},
+ isbn = {978-3-642-10330-8},
+ pages = {357--366},
+ location = {Las Vegas, Nevada},
+ doi = {http://dx.doi.org/10.1007/978-3-642-10331-5_34},
+ publisher = {Springer-Verlag},
+ address = {Berlin, Heidelberg},
+ }

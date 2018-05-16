@@ -1,0 +1,8 @@
+@inbook { 32bc31b4f1,
+    author = { Ament, Marco and Frey, Steffen and Müller, Christoph and Grottel, Sebastian and Ertl, Thomas and Weiskopf, Daniel },
+    title = { GPU-Accelerated Visualization },
+    year = { 2012 },
+    editor = { E. W. Bethel, H. Childs, and C. Hansen },
+    booktitle = { High Performance Visualization: Enabling Extreme-Scale Scientific Insight },
+    publisher = { Chapman and Hall/CRC }
+}

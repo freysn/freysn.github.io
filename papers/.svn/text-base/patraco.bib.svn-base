@@ -1,0 +1,7 @@
+@InProceedings{egpgv10-frey,
+  author = {Frey, S. and Ertl, T.},
+  title  = {{PaTraCo: A Framework Enabling the Transparent and Efficient Programming of Heterogeneous Compute Networks}},
+  year   = {2010},
+  organization = {{Eurographics Association}},
+  booktitle = {{Eurographics Symposium on Parallel Graphics and Visualization (EGPGV10)}}
+}

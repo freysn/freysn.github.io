@@ -1,0 +1,10 @@
+@inproceedings {panagiotidis:eg15,
+booktitle = {Eurographics Conference on Visualization (EuroVis) - Short Papers},
+editor = {E. Bertini and J. Kennedy and E. Puppo},
+title = {{Exploratory Performance Analysis and Tuning of Parallel Interactive Volume Visualization on Large Displays}},
+author = {Panagiotidis, Alexandros and Frey, Steffen and Ertl, Thomas},
+year = {2015},
+publisher = {The Eurographics Association},
+DOI = {10.2312/eurovisshort.20151118},
+ keywords = {own, reviewed}
+}
