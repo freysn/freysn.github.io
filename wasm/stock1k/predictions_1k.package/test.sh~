@@ -1,0 +1,9 @@
+set -o xtrace
+
+outdir=${HOME}/Dropbox/Documents/000wip/supertiles/rslts/predictions1m/
+
+outdir=/tmp/test
+
+#mkdir -p $outdir
+
+./supertiles_place -d ~/Dropbox/Documents/000wip/supertiles/use_cases/stocks/predictions1m.config --outDir $outdir --distFuncType 1 --loadAssignments ${HOME}/Dropbox/Documents/000wip/supertiles/rslts/predictions1m/qtLeafAssignment.raw.bz2 --repAggregationType 4  --termTime 0 --preNormData --noDisparityIndicator
