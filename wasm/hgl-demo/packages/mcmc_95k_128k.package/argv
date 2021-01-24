@@ -1,0 +1,8 @@
+--loadAssignments
+packages/mcmc_95k_128k.package/qtLeafAssignment.raw.bz2
+--nTilesAssign
+131072
+--distFuncType
+1
+--repAggregationType
+3

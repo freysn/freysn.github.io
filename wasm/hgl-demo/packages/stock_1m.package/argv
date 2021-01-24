@@ -1,0 +1,7 @@
+--loadAssignments
+packages/stock_1m.package/qtLeafAssignment.raw.bz2
+--preNormData
+--distFuncType
+1
+--repAggregationType
+4
