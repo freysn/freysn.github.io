@@ -1,0 +1,8 @@
+--loadAssignments
+packages/caltech.package/qtLeafAssignment.raw.bz2
+--nTilesAssign
+10240
+--distFuncType
+2
+--repAggregationType
+2
