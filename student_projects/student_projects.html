@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Student Projects</title>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;max-width:900px;margin:2rem auto;padding:0 1rem;line-height:1.5}
+img{max-width:100%;height:auto}
+.project{border-bottom:1px solid #ddd;padding:1rem 0}
+</style>
+</head><body>
+<h1>Student Projects</h1>
+
+<section class="project"><h2>Neural Upscaling for Scientific Visualization: Benchmarking and Fine-Tuning</h2>
+<p>This project investigates whether deep-learning-based super-resolution can be safely applied to scientific visualization tasks such as volume and flow rendering. Commonly used super-resolution methods are typically trained on movies or video games and may introduce hallucinated features or suppress critical fine-scale structures in scientific data. The project focuses on classifying the errors that arise when using off-the-shelf methods and addressing these issues through fine-tuning on scientific visualization images.</p>
+<p>The workflow involves building an open-source neural super-resolution pipeline and generating paired low- and high-resolution scientific renderings, optionally including depth or motion information. Models are first applied without additional training, then fine-tuned on domain-specific data using losses that emphasize edge preservation, intensity fidelity, and structural accuracy. A comparison is also made with a proprietary hardware-accelerated super-resolution method by upscaling the same scientific scenes using its available API.</p>
+<p>Quality is assessed using both general image metrics and domain-specific measures, including preservation of small features, consistency across frames, and sensitivity of derived analyses. The project evaluates how the different approaches respond to characteristic scientific patterns such as thin isosurfaces, vortices, or sharp scalar gradients, identifying when neural super-resolution provides reliable acceleration for scientific visualization and where standard high-resolution rendering remains necessary.</p>
+</section>
+<section class="project"><h2>Pattern-Aware Transfer Functions for Scientific Volume Rendering</h2>
+<p>Volume rendering is a powerful tool for visualizing complex 3D datasets, but traditional transfer functions typically map color and opacity based only on scalar values at individual points, sometimes including derivatives. This approach can miss subtle structures or repeating patterns that span multiple voxels. This project explores transfer functions that operate on local spatial regions (&quot;blocks&quot;) rather than single points, enabling visualizations to highlight patterns, textures, and recurring structures within volumetric data. Key challenges include efficiently representing these spatial patterns, extracting them from the data, and designing intuitive ways for users to explore and manipulate them.</p>
+<p>The project focuses on scientific visualization and deep learning. It investigates methods for block-level feature extraction—such as deep learning-based descriptors, 3D convolutional features, or classical approaches like local histograms or PCA—and applies clustering or pattern classification to identify recurring structures. Interactive tools can then assign color and opacity to clustered patterns, creating more expressive and informative visualizations. The project involves working with scientific datasets, experimenting with both data-driven and user-driven approaches, and contributing to the development of more intuitive techniques for understanding complex volumetric data.</p>
+</section>
+<section class="project"><h2>Data-Driven Glyph Design for Ensemble Visualization</h2>
+<p>Grids are a common way to visualize large data collections, but they involve a trade-off: higher resolution allows more thumbnails to be displayed, yet each glyph has only a small space to convey meaningful information. Efficient glyph design is therefore crucial to highlight similarities and differences across many data instances.</p>
+<p>This project focuses on creating expressive glyphs for visualizing structures and processes in porous media through a two-step approach. First, a glyph design space is defined using a small set of simple primitives that can be varied in size, position, and color. These variations support rapid, pre-attentive comparison of patterns. Second, glyphs are parametrized in a data-driven way using a Siamese network architecture to capture feature similarities between data samples. This representation allows subtle commonalities and differences to be clearly reflected, making large ensemble comparisons more intuitive and informative.</p>
+</section>
+<section class="project"><h2>Enhancing Sca2Gri: Efficient and Holistic Scatterplot Visualization</h2>
+<p><a href="https://github.com/freysn/sca2gri">Sca2Gri</a> is a scalable post-processing method for large-scale scatterplots that reduces visual clutter by gridifying glyph representations. It is designed for data analysis scenarios involving millions of data points, far beyond what traditional scatterplot rendering techniques can handle effectively.</p>
+<p>This project explores ways to improve both the performance and the expressiveness of Sca2Gri. One focus is optimizing the selection of data points for rendering grid glyphs using specialized data structures. Range trees combined with fractional cascading present a promising approach. Range trees efficiently handle range queries in n-dimensional data, and fractional cascading can reduce the computational complexity to that of a one-dimensional range tree, potentially speeding up queries for visualization.</p>
+<p>Another key aspect is the aggregation of data points within each glyph to provide a more holistic view. Rather than showing a single representative point, each glyph could summarize the full range of underlying data—through averaging or other aggregation techniques—while maintaining interactive exploration capabilities, such as a draggable lens.</p>
+<p>This project seeks to address questions such as:</p>
+<ul>
+<li>Can range trees improve the time performance of Sca2Gri for holistic scatterplot visualizations?</li>
+</ul>
+<ul>
+<li>Can data aggregation, like averaging, be incorporated without significantly slowing down rendering?</li>
+</ul>
+<ul>
+<li>How can interactive lenses enhance exploration of Sca2Gri plots while remaining responsive?</li>
+</ul>
+<p>By combining efficient data structures with aggregation and interaction techniques, this project aims to make scatterplot visualization both faster and more informative, supporting deeper insights into complex datasets.</p>
+</section>
+<section class="project"><h2>PARViT: Perioperative Augmented Reality Visualization via Visual Information Transformers</h2>
+<p>PARViT is envisioned as an ML-based perioperative support system that uses augmented reality to guide surgeons through the critical preparation phase of rectal cancer surgery. This phase requires careful dissection of four structural “pillars,” each composed of five partial steps, to enable a radical resection and favorable oncological outcomes.</p>
+<p>The project focuses on learning from expert ratings of dissection progress in a large video database. These ratings form the basis for automated feedback and for studying how varying levels of preparation correlate with three-year oncological outcomes.</p>
+<p>Technically, the project aims to build PARViT on top of a Vision Transformer (ViT) architecture. Surgery frames are split into patches and processed through transformer blocks to produce frame embeddings that capture visual features relevant for assessing progress. The model will be pre-trained on large image datasets (e.g., ImageNet-21k, Medical ImageNet) and fine-tuned on labeled surgery videos. Self-attention and multi-headed attention mechanisms will enable the system to identify important structures and contextual relationships in each frame.</p>
+<p>Overall, the project aims to explore how such a system can support consistent, safe tissue preparation and reduce perioperative complications. It will be conducted in collaboration with the UMCG.</p>
+<p><strong>Objectives:</strong></p>
+<ul>
+<li><strong>O1: State Recognition</strong></li>
+</ul>
+<p>Detect the start of the preparation phase, track progress within each pillar on a 0–5 scale, and identify the transition to tumor removal. Maintain an internal representation of pillar-specific progress based on frame-level classifications learned from expert-annotated sequences.</p>
+<ul>
+<li><strong>O2: State Assessment (3-Year Follow-Up)</strong></li>
+</ul>
+<p>Use three-year outcome data to examine whether incomplete preparation (e.g., reaching only 3/5 in a pillar) is associated with increased recurrence risk, thereby validating the clinical relevance of the preparation states.</p>
+<p><strong>Stretch Goals:</strong></p>
+<ul>
+<li><strong>O3: Best-Practice Retrieval</strong></li>
+</ul>
+<p>Retrieve similar, well-executed reference segments from the database by comparing internal embeddings with those from the ongoing procedure.</p>
+<ul>
+<li><strong>O4: Attention Visualization</strong></li>
+</ul>
+<p>Highlight influential image regions using attention maps to support interpretation and identify structures relevant for the assessed state.</p>
+<ul>
+<li><strong>O5: AR Visualization</strong></li>
+</ul>
+<p>Prototype AR overlays that present state information, best-practice examples, and attention highlights in a clear, unobtrusive manner, with long-term potential for integration into robotic platforms such as the Da Vinci system.</p>
+</section>
+</body></html>
